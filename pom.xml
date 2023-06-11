@@ -11,7 +11,7 @@
 
     <groupId>cn.minhx</groupId>
     <artifactId>minhx-lucky-draw</artifactId>
-    <version>ld.2023.06.11</version>
+    <version>${ld.version}</version>
     <!--父工程pom就行-->
     <packaging>pom</packaging>
 
@@ -39,8 +39,18 @@
     <properties>
         <java.version>11</java.version>
         <ld.version>ld.2023.06.11</ld.version>
+        <mybatis-plus-boot-starter.version>3.5.3</mybatis-plus-boot-starter.version>
+        <rocketmq-spring-boot-starter.version>2.2.3</rocketmq-spring-boot-starter.version>
         <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
         <lombok.version>1.18.28</lombok.version>
+        <druid.version>1.2.17</druid.version>
+        <fastjson.version>2.0.27</fastjson.version>
+        <hutool.version>5.8.17</hutool.version>
+        <okhttp.version>4.11.0</okhttp.version>
+        <javax.sun.mail.version>1.6.2</javax.sun.mail.version>
+        <jasypt.version>3.0.5</jasypt.version>
+        <jwt.version>4.4.0</jwt.version>
+
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,7 +61,7 @@
 
     <!--子工程-->
     <modules>
-
+        <module>ld-pom</module>
     </modules>
 
     <build>
