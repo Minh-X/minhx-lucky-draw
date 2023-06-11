@@ -13,6 +13,7 @@
     <modules>
         <module>ld-pom</module>
         <module>ld-base</module>
+        <module>ld-gateway</module>
     </modules>
 
     <groupId>cn.minhx</groupId>
