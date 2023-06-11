@@ -12,7 +12,11 @@
     <artifactId>ld-base-config</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>cn.minhx</groupId>
+            <artifactId>ld-pom</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -9,18 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <groupId>cn.minhx</groupId>
+    <artifactId>minhx-lucky-draw</artifactId>
+    <version>ld.2023.06.11</version>
+    <packaging>pom</packaging>
+
     <!--子工程-->
     <modules>
         <module>ld-pom</module>
         <module>ld-base</module>
         <module>ld-gateway</module>
+        <module>ld-service</module>
     </modules>
-
-    <groupId>cn.minhx</groupId>
-    <artifactId>minhx-lucky-draw</artifactId>
-    <version>ld.2023.06.11</version>
-    <!--父工程pom就行-->
-    <packaging>pom</packaging>
 
     <dependencyManagement>
         <dependencies>

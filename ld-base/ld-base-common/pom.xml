@@ -15,7 +15,7 @@
         <dependency>
             <groupId>cn.minhx</groupId>
             <artifactId>ld-base-config</artifactId>
-            <version>ld.2023.06.11</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

@@ -8,16 +8,15 @@
         <version>ld.2023.06.11</version>
     </parent>
 
-    <packaging>pom</packaging>
-    <artifactId>ld-base</artifactId>
-
-    <modules>
-        <module>ld-base-config</module>
-        <module>ld-base-common</module>
-    </modules>
+    <packaging>jar</packaging>
+    <artifactId>ld-service</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>cn.minhx</groupId>
+            <artifactId>ld-base-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
