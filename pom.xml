@@ -11,7 +11,7 @@
 
     <groupId>cn.minhx</groupId>
     <artifactId>minhx-lucky-draw</artifactId>
-    <version>${ld.version}</version>
+    <version>ld.2023.06.11</version>
     <!--父工程pom就行-->
     <packaging>pom</packaging>
 
@@ -50,6 +50,7 @@
         <javax.sun.mail.version>1.6.2</javax.sun.mail.version>
         <jasypt.version>3.0.5</jasypt.version>
         <jwt.version>4.4.0</jwt.version>
+        <mysql.connector-j.version>8.0.33</mysql.connector-j.version>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
