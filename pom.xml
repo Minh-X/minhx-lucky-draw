@@ -9,6 +9,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!--子工程-->
+    <modules>
+        <module>ld-pom</module>
+        <module>ld-base</module>
+    </modules>
+
     <groupId>cn.minhx</groupId>
     <artifactId>minhx-lucky-draw</artifactId>
     <version>ld.2023.06.11</version>
@@ -59,11 +65,6 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <cola.components.version>4.3.1</cola.components.version>
     </properties>
-
-    <!--子工程-->
-    <modules>
-        <module>ld-pom</module>
-    </modules>
 
     <build>
         <plugins>
