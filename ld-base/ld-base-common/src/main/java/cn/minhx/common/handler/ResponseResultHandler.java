@@ -1,7 +1,7 @@
 package cn.minhx.common.handler;
 
 import cn.minhx.common.annotation.ResponseResult;
-import cn.minhx.config.vo.SuccessInfo;
+import cn.minhx.config.vo.SuccessInfoAbstract;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -20,6 +20,7 @@ import java.util.Objects;
 
 /**
  * 切面对响应增强，自动将响应结果封装为定义的统一响应
+ * @author permission
  */
 @Slf4j
 @ControllerAdvice
@@ -66,7 +67,7 @@ public class ResponseResultHandler implements ResponseBodyAdvice<Object> {
      * @param aClass aClass
      * @param serverHttpRequest serverHttpRequest
      * @param serverHttpResponse serverHttpResponse
-     * @return {@link SuccessInfo}
+     * @return {@link SuccessInfoAbstract}
      */
     @SneakyThrows
     @Override
@@ -76,7 +77,7 @@ public class ResponseResultHandler implements ResponseBodyAdvice<Object> {
                                   @Nonnull Class<? extends HttpMessageConverter<?>> aClass,
                                   @Nonnull ServerHttpRequest serverHttpRequest,
                                   @Nonnull ServerHttpResponse serverHttpResponse) {
-        var successInfo = SuccessInfo.builder()
+        var successInfo = SuccessInfoAbstract.builder()
                 .data(data)
                 .build();
         ObjectMapper om = new ObjectMapper();

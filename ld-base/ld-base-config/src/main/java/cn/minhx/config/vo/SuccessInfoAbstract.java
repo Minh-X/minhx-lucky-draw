@@ -5,10 +5,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
+/**
+ * @author permission
+ */
 @Builder
 @Getter
 @ToString
-public class SuccessInfo extends ResultInfo {
+public class SuccessInfoAbstract extends AbstractResultInfo {
 
     protected static final Integer DEFAULT_CODE = 0;
     protected static final String DEFAULT_MESSAGE = "操作成功";
@@ -17,7 +20,7 @@ public class SuccessInfo extends ResultInfo {
     protected Object data;
 
 
-    protected SuccessInfo(Object data) {
+    protected SuccessInfoAbstract(Object data) {
         super(true, DEFAULT_CODE, DEFAULT_MESSAGE);
         this.data = data;
     }

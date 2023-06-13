@@ -7,9 +7,10 @@ import java.io.Serializable;
 
 /**
  * 统一返回结果
+ * @author permission
  */
 @Getter
-public abstract class ResultInfo implements Serializable {
+public abstract class AbstractResultInfo implements Serializable {
     /**
      * true or false
      */
@@ -21,7 +22,7 @@ public abstract class ResultInfo implements Serializable {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     protected String message;
 
-    protected ResultInfo(Boolean result, Integer code, String message) {
+    protected AbstractResultInfo(Boolean result, Integer code, String message) {
         this.result = result;
         this.code = code;
         this.message = message;
